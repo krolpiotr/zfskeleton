@@ -32,8 +32,8 @@ return [
         'default' => 'en-US',
         'list' => [
             'en-US' => 'English',
-         //   'pl-PL' => 'Polski',
-			'sv-SE' => 'Svenska',
+            //'pl-PL' => 'Polski',
+	    'sv-SE' => 'Svenska',
         ],
     ],
 ];
