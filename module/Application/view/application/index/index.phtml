@@ -1,0 +1,67 @@
+<div class="jumbotron">
+    <h1>Welcome to <span class="zf-green">ZF3.Prototype.Project</span></h1>
+
+    <p>
+        Congratulations! You can download orginal skeleton here      
+        <a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">ZF Skeleton Application</a>.
+        You are currently running Zend Framework version <?= \Application\Module::VERSION ?>.
+        This skeleton can serve as a simple starting point for you to begin
+        building your application on ZF.
+    </p>
+
+    <p><a class="btn btn-success btn-lg" href="https://zf3.simon-phoenix.se/media/files/zfskeleton.zip" target="_blank">Download ZF3.Prototype.Project &raquo;</a></p>
+</div>
+
+<div class="row">
+    
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Login &amp; Register</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Login and register using zfc-user. <?php echo $this->translate('Welcome to my homepage!') ?></a>
+                </p>
+
+                <p><a class="btn btn-success pull-right" href="<?php echo $this->url('zfcuser', array('action'=>'login')); ?>">Login form</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Languages</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    You can choose language of application 
+                    <a href="<?php echo $this->url('language', array('lang' => 'en-US')) ?>"><img src="<?php echo $this->basePath('/media/themes/prototype/lang/english.png'); ?>" alt="english" /></a> or 
+                    <a href="<?php echo $this->url('language', array('lang' => 'sv-SE')) ?>"><img src="<?php echo $this->basePath('/media/themes/prototype/lang/swedish.png'); ?>" alt="swedish" /></a> or 
+                    <a href="<?php echo $this->url('language', array('lang' => 'pl-PL')) ?>"><img src="<?php echo $this->basePath('/media/themes/prototype/lang/polish.png'); ?>" alt="polish" /></a>
+                 </a>. Because polish is not supported, website become in english. Session keeps your language for 30 seconds but you can change it in module.config.php.
+                </p>
+
+          
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">PDF support</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    You can generate PDF files very easy.</a>
+                </p>
+
+                <p><a class="btn btn-success pull-right" href="<?php echo $this->url('pdfsupport', array('action'=>'pdfsupport')); ?>">Generate PDF file</a></p>
+            </div>
+        </div>
+    </div>
+    
+</div>

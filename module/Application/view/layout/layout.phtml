@@ -1,0 +1,58 @@
+<?= $this->doctype() ?>
+<?php $language = $this->plugin('translate')->getTranslator()->getLocale();
+$route_locale = str_replace('_', '-', $language); ?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?= $this->headTitle('ZF Skeleton Application')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?= $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+            ->prependStylesheet($this->basePath('css/style.css'))
+            ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
+            ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+        ?>
+
+        <!-- Scripts -->
+        <?= $this->headScript()
+            ->prependFile($this->basePath('js/bootstrap.min.js'))
+            ->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+        ?>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?= $this->url('home', array('lang' => $route_locale)) ?>">
+                        <img src="<?= $this->basePath('img/zf-logo-mark.svg') ?>" height="28" alt="Zend Framework <?= \Application\Module::VERSION ?>"/>&nbsp;Skeleton Application
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="<?= $this->url('home', ['lang'=>$this->layout()->route_locale], ['force_canonical' => true]) ?>"><?php echo $this->translate('Home') ?></a></li>
+                        <li class="active"><a href="<?php echo $this->url('about', ['lang'=>$this->layout()->route_locale], ['force_canonical' => true]) ?>"><?php echo $this->translate('About') ?></a></li>
+                        <li class="active"><a href="<?= $this->url('module-name-here', ['lang'=>$this->layout()->route_locale], ['force_canonical' => true]) ?>"><?php echo $this->translate('Module') ?></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><?php //echo $this->layout()->route_locale;  ['lang'=>'$this->layout()->route_locale'] ?>
+        <div class="container"><?php //echo $this->layout()->some_config_var; ?>
+            <?= $this->content ?>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - <?= date('Y') ?> by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div>
+        <?= $this->inlineScript() ?>
+    </body>
+</html>
