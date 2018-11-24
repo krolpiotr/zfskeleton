@@ -9,7 +9,7 @@
         building your application on ZF.
     </p>
 
-    <p><a class="btn btn-success btn-lg" href="https://zf3.simon-phoenix.se/media/files/zfskeleton.zip" target="_blank">Download ZF3.Prototype.Project &raquo;</a></p>
+    <p><a class="btn btn-success btn-lg" href="https://github.com/krolpiotr/zfskeleton" target="_blank">Download ZF3.Prototype.Project from GitHub &raquo;</a></p>
 </div>
 
 <div class="row">
@@ -21,7 +21,7 @@
             </div>
             <div class="panel-body">
                 <p>
-                    Login and register using zfc-user. <?php echo $this->translate('Welcome to my homepage!') ?></a>
+                    Login and register using zfc-user.</a>
                 </p>
 
                 <p><a class="btn btn-success pull-right" href="<?php echo $this->url('zfcuser', array('action'=>'login')); ?>">Login form</a></p>
@@ -40,7 +40,8 @@
                     <a href="<?php echo $this->url('language', array('lang' => 'en-US')) ?>"><img src="<?php echo $this->basePath('/media/themes/prototype/lang/english.png'); ?>" alt="english" /></a> or 
                     <a href="<?php echo $this->url('language', array('lang' => 'sv-SE')) ?>"><img src="<?php echo $this->basePath('/media/themes/prototype/lang/swedish.png'); ?>" alt="swedish" /></a> or 
                     <a href="<?php echo $this->url('language', array('lang' => 'pl-PL')) ?>"><img src="<?php echo $this->basePath('/media/themes/prototype/lang/polish.png'); ?>" alt="polish" /></a>
-                 </a>. Because polish is not supported, website become in english. Session keeps your language for 30 seconds but you can change it in module.config.php.
+                 </a>. Because polish is not supported, website become in english. Session keeps your language for 300 seconds but you can change it in module.config.php. 
+                 Example of translation: <?php echo $this->translate('Welcome to my homepage!') ?>
                 </p>
 
           

@@ -189,11 +189,11 @@ return [
     ), 
 
     'session' => array(
-        'remember_me_seconds' => 30,                       // old 24192000
+        'remember_me_seconds' => 300,                       // old 24192000
         'use_cookies' => true,
         'cookie_httponly' => true,
-        'gc_maxlifetime' => 30, //60 * 60 * 24 * 30*3,     // old 24192000
-        'cookie_lifetime' => 30,                           // old 24192000
+        'gc_maxlifetime' => 300, //60 * 60 * 24 * 30*3,     // old 24192000
+        'cookie_lifetime' => 300,                           // old 24192000
     ),
 /*
     'translatorzfcuser' => array(

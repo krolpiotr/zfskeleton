@@ -32,15 +32,8 @@ class IndexController extends AbstractActionController
     }
     public function pdfsupportAction()
     {
-        //$view = new ViewModel();
-
-        //$renderer = $this->renderer;
-        //$view->setTemplate('layout/pdf');
-        //$html = $renderer->render($view);
-
         $pdf = new PdfDocument();
         //$pdf = \ZendPdf\PdfDocument::load(dirname(__FILE__) .'/document.pdf');
-
 
         // Reverse page order
         $pdf->pages = array_reverse($pdf->pages);
@@ -100,7 +93,7 @@ class IndexController extends AbstractActionController
         ->drawText('Created by PIOTR KROL', 279, 660, "UTF-8");
 
 
-                      $fileName = 'veckorrapport - '.$reportDisplayName.' - vecka '.$weekNow.' ('.$yearNow.')'.'.pdf';
+                      $fileName = 'report ('.date("Y-m-d").')'.'.pdf';
 
                       $response = $this->getResponse();
                       //$response->getHeaders()->addHeaders(array('Content-type' => 'application/pdf'));
