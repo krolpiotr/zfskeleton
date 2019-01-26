@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 16:49+0100\n"
-"PO-Revision-Date: 2017-05-26 08:15+0200\n"
+"PO-Revision-Date: 2019-01-26 08:15+0200\n"
 "Last-Translator: Piotr Krol <simonphoenix.px@gmail.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: sv_SE\n"
@@ -25,57 +25,16 @@ msgid "Welcome to my homepage!"
 msgstr "Välkommen till min hemsida!"
 
 #: ../Application/view/application/index/index.phtml:39
-msgid "Please, help me to collect 1 million euro!"
-msgstr "Snälla, hjälp mig att samla € 1.000.000!"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Transfer to bank account"
-msgstr "Överföring till bankkonto"
-
-#: ../Application/view/application/index/index.phtml:39
 msgid "Under construction"
 msgstr "Under uppbyggnad"
-
-#: ../Application/view/application/index/index.phtml:39 Because ... I'm tired
-#: of walking.
-msgid "Because ... I'm tired of walking."
-msgstr "Därför att ... jag är trött på promenader."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "For education"
-msgstr "För utbildning"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "For driving license"
-msgstr "För körkort"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "For new bike"
-msgstr "För nya cykel"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Maybe in future I will drive a car"
-msgstr "Kanske i framtiden kommer jag att köra en bil"
 
 #: ../Application/view/application/index/index.phtml:39
 msgid "Scroll to top"
 msgstr "Bläddra till toppen"
 
 #: ../Application/view/application/index/index.phtml:39
-msgid "1 million euro"
-msgstr "1 milion euro"
-
-#: ../Application/view/application/index/index.phtml:39
 msgid "Follow me"
 msgstr "Följ mig"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Become a partner"
-msgstr "Bli en samarbets partner"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "List of partners"
-msgstr "Lista partnerów"
 
 #: ../Application/view/application/index/index.phtml:39
 msgid "Partnership"
@@ -90,71 +49,16 @@ msgid "Join me on twitter and facebook!"
 msgstr "Gå med mig på twitter och facebook!"
 
 #: ../Application/view/application/index/index.phtml:39
-msgid "I would like to have a bike. From many years now I don't have my own."
-msgstr ""
-"Jag skulle vilja ha en cykel. Från många år nu att jag inte har min egen."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"Several times I tried to get a driver's license. When I ran out of money I "
-"had no possibilities until now."
-msgstr ""
-"Flera gånger försökte jag att få ett körkort. När jag sprang ut pengar hade "
-"jag ingen möjlighet förrän nu."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"From the five years I moved a minimum of 17 times. I'm already tired of this."
-msgstr ""
-"Från de fem år jag flyttade minst 17 ​​gånger. Jag är redan trött på det här."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "One day I will have, I hope."
-msgstr "En dag kommer jag att ha, hoppas jag."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"Although I've learned and worked. I could not get out of the trap of "
-"poverty. From 3rd March 2014 I don't have a job. It will be even worse."
-msgstr ""
-"Även jag har lärt och arbetade. Jag kunde inte komma ur fällan av fattigdom. "
-"Från 3 mars 2014 Jag har inte jobb. Det kommer att bli ännu värre."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "2014 by Piotr Krol. All rights reserved."
-msgstr "2014 Piotr Król. Alla rättigheter förbehållna."
+msgid "2019 by Piotr Krol. All rights reserved."
+msgstr "2019 Piotr Król. Alla rättigheter förbehållna."
 
 #: ../Application/view/application/index/index.phtml:39
 msgid "Thanks to all visitors of this page."
 msgstr "Tack till alla besökare av denna sida."
 
 #: ../Application/view/application/index/index.phtml:39
-msgid "You can securely transfer money using Paypal"
-msgstr "Du kan säkert överföra pengar med PayPal"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Bank account"
-msgstr "Bankkonto"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Transferring to my bank account"
-msgstr "Överföring till mitt bankkonto"
-
-#: ../Application/view/application/index/index.phtml:39
 msgid "Name and surname:"
 msgstr "Namn och efternamn:"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Donations from abroad"
-msgstr "Donationer från utlandet"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Account number:"
-msgstr "Kontonummer:"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Name of bank:"
-msgstr "Bankens namn:"
 
 #: ../Application/view/application/index/index.phtml:39
 msgid "Sweden"
@@ -169,294 +73,20 @@ msgid "General information"
 msgstr "Allmän information"
 
 #: ../Application/view/application/index/index.phtml:39
-msgid "My name is Piotr Krol. I'm 29 years old. I am married."
-msgstr "Mitt namn är Piotr Krol. Jag är 29 år gammal. Jag är gift."
-
-#: ../Application/view/application/index/index.phtml:39
 msgid "About"
 msgstr "Om mig"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"This is the place for your logo, a link to your website or your name. Become "
-"a partner of Million Euro action."
-msgstr ""
-"Detta är platsen för din logotyp, en länk till din hemsida eller ditt namn. "
-"Bli en partner till Million Euro åtgärd."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "of Million Euro action."
-msgstr "Million Euro åtgärd."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Send logo or your name, and link to your website to my email:"
-msgstr ""
-"Skicka logotyp eller ditt namn, och länk till din webbplats för att min e-"
-"post:"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"In your email I need your agreement for placing on me website information "
-"about you as my partner."
-msgstr ""
-"I din e-post behöver jag ditt avtal för utsläppande på mig webbplats "
-"information om dig som min partner."
 
 #: ../Application/view/application/index/index.phtml:39
 msgid "You can contact me by e-mail"
 msgstr "Du kan kontakta mig via e-post"
 
 #: ../Application/view/application/index/index.phtml:39
-msgid "Please transfer any amount. I'll be very grateful for everything."
-msgstr ""
-"Vänligen överföra något belopp. Jag kommer vara mycket tacksam för allt."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "First Certificates of  PHP, Zend Framework, HTML, CSS, C #, Python."
-msgstr "Första Certifikat PHP, Zend Framework, HTML, CSS, C#, Python."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "I will quickly move to another apartment"
-msgstr "Jag kommer snart flytta till en annan lägenhet"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "I would like to have a better education and skills"
-msgstr "Jag skulle vilja ha en bättre utbildning och kompetens"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "So maybe we will not have to move from place to place!"
-msgstr "Så kanske vi inte behöver flytta från plats till plats!"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "For a new apartment"
-msgstr "För en ny lägenhet"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "For car"
-msgstr "För bil"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Send me please any amount of money"
-msgstr "Skicka mig snälla någon summa pengar"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Just 1 million euro, and I will never hear the squeaking of poverty!"
-msgstr ""
-"Bara 1 miljon euro, och jag kommer aldrig att få höra gnisslet av fattigdom!"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"I don't want to cheat, or lie to you. I ask you just about donating me a "
-"total of one million euros."
-msgstr ""
-"Jag vill inte fuska eller ljuga för dig. Jag ber er bara om att donera mig "
-"sammanlagt en miljon euro."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "no excuses - do it today"
-msgstr "inga ursäkter - gör det idag"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"For four years, I had been working as a ventilation fitter, including two "
-"years as a leading ventilation fitter."
-msgstr ""
-"4 år arbetat jag som ventilationsmontör, däribland två år som ledande "
-"ventilationsmontör."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Now I'm unemployed."
-msgstr "Nu är jag arbetslös."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "I want to have certificates and licenses for the ventilation sector."
-msgstr "Jag vill ha certifikat och licenser för ventilationsbranschen."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Programming"
-msgstr "Programmering"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Programming is my passion"
-msgstr "Programmering är min passion"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"I would like to buy this computer to improve my skills better and faster."
-msgstr ""
-"Jag skulle vilja köpa den här datorn för att förbättra mina kunskaper bättre "
-"och snabbare."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "For all my skills I want to have a certificate."
-msgstr "För alla mina kunskaper jag vill ha ett certifikat."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Ventilation"
-msgstr "Ventilation"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "I like it"
-msgstr "Jag gillar det"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"I do programming in PHP, C#, Bash, HTML, CSS, JavaScript, but many years ago "
-"I used also Pascal, C++, Python."
-msgstr ""
-"Jag gör programmering i PHP, C#, Bash, HTML, CSS, JavaScript, men för många "
-"år sedan använde jag också Pascal, C++, Python."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"I use technologies .NET Framework, Zend Framework, databases, and much "
-"more..."
-msgstr ""
-"Jag använder tekniken .NET Framework, Zend Framework, databaser och mycket "
-"mer ..."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"I do not want money to do nothing. I want money to start doing something."
-msgstr ""
-"Jag vill inte ha pengar för att göra ingenting. Jag vill ha pengar för att "
-"börja göra något."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Project 1"
-msgstr "Projekt 1"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Project 2"
-msgstr "Projekt 2"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Project 3"
-msgstr "Projekt 3"
-
-#: ../Application/view/application/index/index.phtml:39
 msgid "Projects"
 msgstr "Projekter"
 
 #: ../Application/view/application/index/index.phtml:39
-msgid "Website Banners"
-msgstr "Webbplats Banners"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "The following banners can be placed on your website."
-msgstr "Följande banners kan placeras på din webbplats."
-
-#: ../Application/view/application/index/index.phtml:39
 msgid "Note"
 msgstr "Obs"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Banner Exchange"
-msgstr "Banner Exchange"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Place my banner on your website"
-msgstr "Placera min banner på din webbplats"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Your banners on my website"
-msgstr "Dina banners på min hemsida"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Please use the following code to display the banner on your website:"
-msgstr "Använd följande kod för att visa banner på din webbplats:"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"Send me the link to your ad, your website address and the link to webpage "
-"where you shall place my ad. As long as my ad will be placed on your "
-"website, your banner will be placed in"
-msgstr ""
-"Sänd mig länken till din banner, din webbadress och en länk till webbsidan "
-"där du ska placera min banner. Så länge min annons kommer att placeras på "
-"din webbplats, kommer din banner att placeras i"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Your Banners"
-msgstr "Dina Banners"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "on my website."
-msgstr "på min hemsida."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Read more about Banner Exchange"
-msgstr "Läs mer om Banner Exchange"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "here."
-msgstr "här."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "I do not allow following sites:"
-msgstr "Jag tillåter inte följande webbplatser:"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "casino and similar sites,"
-msgstr "casino och liknande webbplatser,"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"sites containing phornography, nudity, alcohol, drugs and sites against laws,"
-msgstr "webbplatser som innehåller phornography, nakenhet, alkohol, droger,"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "racists and illegal sites,"
-msgstr "rasister och olagliga webbplatser,"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"Please use the website code to display the banners on your website rather "
-"than downloading the images, as the images below are for demonstration "
-"purposes only."
-msgstr ""
-"Använd webbplatsen kod för att visa banners på din webbplats snarare än att "
-"ladda ner bilderna, som bilderna nedan är för demonstrationssyfte."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"This will ensure your website is always displaying the latest version of my "
-"banners."
-msgstr ""
-"Detta kommer att säkerställa att din webbplats alltid visar den senaste "
-"versionen av mina banners."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "Link to me on your website"
-msgstr "Länka till mig på din webbsida"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "At this moment I need"
-msgstr "Just nu behöver jag"
-
-#: ../Application/view/application/index/index.phtml:39
-msgid ""
-"I would like to achieve the aim in my life, but I fail the time because of "
-"helping others."
-msgstr ""
-"Jag skulle vilja ha något i mitt liv, men jag förlorar för mycket tid åt att "
-"hjälpa andra."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "My wife never refuses to help, either."
-msgstr "Min fru, hon heller aldrig vägrar att hjälpa till."
-
-#: ../Application/view/application/index/index.phtml:39
-msgid "We have no friends when we need help."
-msgstr "I ett läge när vi behöver hjälp, plötsligt att vi inte har vänner."
-
-#: ../Application/view/application/index/index.phtml:335
-msgid "Million"
-msgstr "Milion"
-
-#: ../Application/view/application/index/index.phtml:335
-msgid "Euro"
-msgstr "Euro"
 
 #: ../Application/view/error/404.phtml:1
 msgid "A 404 error occurred"
@@ -542,52 +172,8 @@ msgid "Home"
 msgstr "Hemsida"
 
 #: ../Application/view/layout/layout.phtml:193
-msgid "Reports"
-msgstr "Rapporter"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "New report"
-msgstr "Ny rapport"
-
-#: ../Application/view/layout/layout.phtml:193
 msgid "Print to PDF"
 msgstr "Skriv ut till PDF"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Send to Niklas and me"
-msgstr "Skicka till Niklas och mig"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Write daily report."
-msgstr "Skriv daglig rapport."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter personal report"
-msgstr "Ange personlig rapport"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter daily book"
-msgstr "Ange daglig bok"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Add"
-msgstr "Lägg till"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Please select an week"
-msgstr "Vänligen välj en vecka"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Please select a project"
-msgstr "Vänligen välj ett projekt"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Please select hours"
-msgstr "Vänligen välj timmar"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Show report of this month"
-msgstr "Visa rapport från den här månaden"
 
 #: ../Application/view/layout/layout.phtml:193
 msgid "Change password"
@@ -606,18 +192,6 @@ msgid "Report"
 msgstr "Rapport"
 
 #: ../Application/view/layout/layout.phtml:193
-msgid "Vacations"
-msgstr "Semester"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Boss of the company."
-msgstr "Företagets chef."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Boss"
-msgstr "Chef"
-
-#: ../Application/view/layout/layout.phtml:193
 msgid "Overview"
 msgstr "Översikt"
 
@@ -630,212 +204,12 @@ msgid "to"
 msgstr "till"
 
 #: ../Application/view/layout/layout.phtml:193
-msgid "Show report of this week"
-msgstr "Visa rapport från den här veckan"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "You are hired from"
-msgstr "Du anställs från"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Until"
-msgstr "Fram till"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "you have"
-msgstr "har du"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "days of vacation."
-msgstr "dagars semester."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "You already used"
-msgstr "Du har redan använt"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "All of your vacation days until now:"
-msgstr "Alla dina semesterdagar fram till nu:"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter dates to see result. Write date in format YYYY-MM-DD or chose from mobile."
-msgstr "Ange datum för att se resultat. Skriv datum i formatet ÅÅÅÅ-MM-DD eller välj från mobil."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter date from"
-msgstr "Ange datum från"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter date to"
-msgstr "Ange datum till"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "All daily books"
-msgstr "Alla dagliga böcker"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "All daily books from the first record."
-msgstr "Alla dagliga böcker från första posten."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Show projects by date"
-msgstr "Visa projekt efter datum"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Project by date"
-msgstr "Projekt efter datum"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "The boss page"
-msgstr "Chefsidan"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Weekly report"
-msgstr "Vecka rapport"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Week"
-msgstr "Vecka"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Date"
-msgstr "Datum"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Place"
-msgstr "Plats"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Hrs"
-msgstr "Tim"
-
-#: ../Application/view/layout/layout.phtml:193
 msgid "Name"
 msgstr "Namn"
 
 #: ../Application/view/layout/layout.phtml:193
 msgid "Project"
 msgstr "Projekt"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Show projects by dates"
-msgstr "Visa projekt efter datum"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Show all daily books"
-msgstr "Visa alla dagliga böcker"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Show current daily book"
-msgstr "Visa aktuell daglig bok"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Current daily book"
-msgstr "Aktuell daglig bok"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Daily book"
-msgstr "Daglig bok"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Additional options"
-msgstr "Ytterligare alternativ"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Show weekly report by the week (BRAVIDA)"
-msgstr "Visa veckovisrapport varje vecka (BRAVIDA)"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Show all of my reports"
-msgstr "Visa alla mina rapporter"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter week and year."
-msgstr "Ange vecka och år."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter week"
-msgstr "Ange vecka"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter year"
-msgstr "Ange år"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Choose the person, enter week and year."
-msgstr "Välj person, ange vecka och år."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Choose person"
-msgstr "Välj person"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Please select a person"
-msgstr "Välj en person"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Enter week and year"
-msgstr "Ange vecka och år"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "All of my reports"
-msgstr "Alla mina rapporter"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Salary peroid"
-msgstr "Löneperiod"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Payout Date"
-msgstr "Utbetalningsdatum"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Per hour"
-msgstr "Per timme"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Choose the person and peroid."
-msgstr "Välj person och löneperiod."
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Vacation pay per day"
-msgstr "Semesterlön per dag"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Please select art"
-msgstr "Välj löneart"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Create salary specification"
-msgstr "Skapa lönespecifikation"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "New salary specification"
-msgstr "Ny lönespecifikation"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "New payslip"
-msgstr "Ny lönebesked"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Create payslip"
-msgstr "Skapa lönebesked"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Salary specifications"
-msgstr "Lönespecifikationerna"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Category"
-msgstr "Kategori"
-
-#: ../Application/view/layout/layout.phtml:193
-msgid "Line"
-msgstr "Linje"
-
-
-#~ msgid "Million Euro"
-#~ msgstr "Milion Euro"
 
 #~ msgid "All rights reserved."
 #~ msgstr "Alla rättigheter förbehållna."
