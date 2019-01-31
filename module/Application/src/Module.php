@@ -1,7 +1,7 @@
 <?php
 /**
  * @link      ZF3.Prototype.Project
- * @copyright Copyright (c) 2000-2018 The PHOENIX Developer Studio (http://simon-phoenix.se)
+ * @copyright Copyright (c) 2000-2019 The PHOENIX Developer Studio (http://simon-phoenix.se)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
@@ -24,20 +24,22 @@ use Zend\Session\Config\StandardConfig;
 use Zend\I18n\Translator\Resources;
 use Zend\I18n\Translator\Translator;
 
+use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
 //---------------------------------------------------------------------------------
-class Module
+class Module implements ConfigProviderInterface
 {
-    const VERSION = '3.0.3-dev';
+    const VERSION = '3.0.7';
 
-    public $sessionContainer;
+	public $sessionContainer;
+	//public $sm;
 
-    
-    public function onBootstrap(MvcEvent $e)
+    public function onBootstrap(MvcEvent $e)  // (MvcEvent $e)
     {
 		//$eventManager        = $e->getApplication()->getEventManager();
         $application         = $e->getApplication();
 		$services            = $application->getServiceManager();
+		//$this->sm            = $application->getServiceManager();
 		$config              = $services->get('Config');
 		$translator = $e->getApplication()->getServiceManager()->get('MvcTranslator');
 
@@ -50,24 +52,12 @@ class Module
 		
     	$locale = 'en_US';
 		$default = 'en_US';
-		
-        //$session = new SessionManager();
         
 		$viewModel  = $e->getViewModel();
-		$viewModel->some_config_var = '12345';
-		//$viewModel->route_locale;
 		
     	// configuration from module.config.php
     	//-------------------------------------------------------------------------
         $sessionConfig = new SessionConfig();
-		/*
-        $config_cc = new StandardConfig();
-        $config_cc->setOptions([
-            'remember_me_seconds' => 30,
-            'name'                => 'zf3',
-        ]);
-		$sessionManager = new SessionManager($config_cc);
-		*/
 		$sessionConfig->setOptions($config['session']);
     	$session = new SessionManager($sessionConfig);
     	$session->start();
@@ -87,33 +77,16 @@ class Module
     		$config = $e->getApplication()->getServiceManager()->get('Configuration');
     		$localesConfig = $config['locales'];
     		$locales = $localesConfig['list'];
-    		/*
-    		// unsupported locale provided
-    		if (!in_array($br_locale, array_keys($locales))
-    		&& $e->getApplication()->getRequest()->getUri()->getPath() !== '/') {
-    		
-    			$locale = $localesConfig['default'];
-    			$url = $e->getRouter()->assemble(array(
-    					'locale' => $localesConfig['default']
-    			), array('name' => 'home'));
-    			$response = $e->getApplication()->getResponse();
-    			$response->getHeaders()->addHeaderLine('Location', $url);
-    			$response->setStatusCode(Response::STATUS_CODE_302);
-    			$response->sendHeaders();
-    			exit;
-    		}   
-            */
+
     		if (!in_array($br_locale, array_keys($locales))){
     			$locale = $localesConfig['default'];
     			$cor_locale_5 = str_replace('-', '_', $locale);
     			
     			$session->locale = $locale;
-    			
-    			$viewModel->lang_sv_SE = $cor_locale_5;
-				$viewModel->lang_svSE = $locale; 
 
 				$viewModel->route_locale  = $locale;;			
-    		}
+			}
+			
     		// If there is no locale parameter in the route, switch to default locale
     		if (empty($locale)) {
     			$locale = $localesConfig['default'];
@@ -123,26 +96,15 @@ class Module
     		if (in_array($br_locale, array_keys($locales))) {
     			// wysylamy wszystkie przydatne nam informacjie
     			$session->locale = $br_locale;
-    			$locale = $browser_locale;
-    			
-    			//$viewModel->lang_sv = $locale;
-    			$viewModel->lang_sv_SE = $browser_locale;
-    			$viewModel->lang_svSE = $br_locale;    			
-    			
+    			$locale = $browser_locale;	
     		}
     	} // if (isset($session->locale)) {    	
     	    	
-    	// kiedy wartosc sesji jest dostepna    // ZMIENILEMMMMMMMMMMMMMMMMMM
+    	// kiedy wartosc sesji jest dostepna    
     	//-------------------------------------------------------------------------
     	if (isset($this->sessionContainer->locale)) {
     		$cor_locale = str_replace('-', '_', $this->sessionContainer->locale);
-    		$locale = $cor_locale;
-			
-			
-           // echo var_dump($this->sessionContainer->locale." sesja dostepna");
-
-    		$viewModel->lang_sv_SE = $cor_locale;
-			$viewModel->lang_svSE = $session->locale;   
+    		$locale = $cor_locale; 
 			
 			$viewModel->route_locale  = $this->sessionContainer->locale;
     	}
@@ -164,11 +126,7 @@ class Module
     		//$loc_temp = str_replace('-', '_', $locale);
     	
     		$viewModel  = $e->getViewModel();
-            //$session = $services->get('session');   TU ZROBIC ZEBY DZIALALO!!!!!!!!!!!!!!!!!!!!!
             $session = $this->sessionContainer;
-    		    	
-    		
-    		//$viewModel->lang_svSE = $locale;
     		
     		// If there is no lang parameter in the route, nothing to do
     		if (empty($locale)) {
@@ -178,8 +136,6 @@ class Module
     		$services = $e->getApplication()->getServiceManager();
     		 
     		// If the session language is the same, nothing to do
-            //$session = $services->get('session');     // ZMIENILEMMMMMMMMMMMM
-            //$session = $this->sessionContainer;
     		if (isset($session->locale) && ($session->locale == $locale)) {
     			return;
     		}
@@ -188,9 +144,6 @@ class Module
     			$locale = $localesConfig['default'];
     			$cor_locale_5 = str_replace('-', '_', $locale);
     			$session->locale = $locale;
-    		
-    			$viewModel->lang_sv_SE = $cor_locale_5;
-				$viewModel->lang_svSE = $locale;
 				
 				$viewModel->route_locale  = $locale;
     		}
@@ -203,12 +156,6 @@ class Module
     		$translator->setLocale($loc_temp);
     		\Locale::setDefault($loc_temp); 
     		 
-    		//$viewModel  = $e->getViewModel();
-    		//$viewModel->lang_sv = $locale;
-    		$viewModel->lang_sv_SE = $loc_temp;
-			$viewModel->lang_svSE = $locale;   
-
-
 			$viewModel->route_locale  = $locale;		
     	
     		//var_dump(' LANGUAGE IN SESSION: '.$session->locale.','.' LOCALE: '.$locale.','.' LOCALE TEMP: '.$loc_temp.'');
@@ -217,23 +164,8 @@ class Module
     	//-------------------------------------------------------------------------
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
-        $this->bootstrapSession($e);
-        
-    }
-    protected function forgetInvalidSession($sessionManager) 
-    {
-    	try {
-    		$sessionManager->start();
-    		return;
-    	} catch (\Exception $e) {
-    	}
-    	/**
-    	 * Session validation failed: toast it and carry on.
-    	 */
-    	// @codeCoverageIgnoreStart
-    	session_unset();
-    	// @codeCoverageIgnoreEnd
-    }
+		$this->bootstrapSession($e);   
+	}
     //-----------------------------------------------------------------------------
     public function bootstrapSession($e)
     {
@@ -286,7 +218,7 @@ class Module
 
             $chain->attach('session.validate', array($validator, 'isValid'));
         }
-        echo var_dump($session. "hghg");
+        //echo var_dump($session. "some");
     }
 	//-----------------------------------------------------------------------------
     public function getServiceConfig()
@@ -338,10 +270,16 @@ class Module
 
                     Container::setDefaultManager($sessionManager);
                     return $sessionManager;
-                },
+				},
             ],
-        ];
-    }
+		];
+	}
+	//-----------------------------------------------------------------------------
+	// getControllerConfig method:
+	public function getControllerConfig()
+	{ 
+		return []; 
+	}
     //-----------------------------------------------------------------------------
     public function getConfig()
     {
